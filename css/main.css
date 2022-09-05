@@ -26,6 +26,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -219,7 +221,7 @@
 
 .project-description {
   color: var(--colorBlack1);
-  font-size: 1.35em;
+  font-size: 1.1em;
   margin-top: 0.5em;
   margin-bottom: 0;
   line-height: 1.4em;
@@ -251,67 +253,49 @@
   padding-top: 2.5em;
 }
 
-.experience-article {
+.experience-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding-left: 2.5em;
   padding-bottom: 2em;
+  padding-right: 2.5em;
 }
 
-.experience-temporal {
-  margin: 0;
-  width: 90%;
-  max-width: 1440px;
-  position: relative;
+.experience-article {
+  width: 100%;
+  max-width: 425px;
+  box-shadow: 0 0 10px -2px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.git-landscape {
-  border-radius: 10px;
-  box-shadow: 0 0 10px -2px var(--colorBlack9);
+.experience-image {
   width: 100%;
 }
 
-.git-image,
-.git-shit,
-.git-dialog {
-  position: absolute;
+.experience-text {
+  padding: 1.8em;
 }
 
-.git-image {
-  width: 20%;
-  top: 24%;
-  left: 41%;
+.experience-text i {
+  cursor: pointer;
 }
 
-.git-shit {
-  width: 45%;
-  top: 38%;
-  left: 50%;
-}
-
-.git-dialog {
-  color: var(--colorGitText);
-  font-size: 2.4em;
+.experience-title {
+  font-size: 1.8em;
   font-weight: 700;
-  line-height: 1.3em;
-  width: 30%;
-  height: 37%;
-  background-color: white;
-  border-radius: 0.5em;
-  top: 32%;
-  left: 8%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: .2em;
 }
 
-.dialog-triangle {
-  display: inline-block;
-  border-width: 1em;
-  border-color: transparent transparent transparent white;
-  border-style: solid;
-  position: absolute;
-  top: 0.4em;
-  right: -1.7em;
+.experience-details {
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-in-out;
+  font-size: 1em;
+}
+
+.show-experience-details {
+  max-height: 120px;
 }
 
 /*** SECTION: CONTACT ***/
@@ -576,6 +560,8 @@
   .project {
     font-size: 9px;
   }
+
+  /*** SECTION: EXPERIENCE ***/
 
   /*** SECTION: CONTACT ***/
   .social {
