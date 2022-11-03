@@ -31,6 +31,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .container {
   font-family: Roboto, system-ui, sans-serif;
 }
@@ -217,6 +222,7 @@
 .project-link-absolute {
   color: var(--colorBlack5);
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .project-description {
