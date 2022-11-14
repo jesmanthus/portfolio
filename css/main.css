@@ -32,6 +32,7 @@
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -288,16 +289,16 @@ html {
 }
 
 .experience-title {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: .2em;
+  margin-bottom: 8px;
 }
 
 .experience-details {
   overflow: hidden;
   max-height: 0;
   transition: all .5s ease-in-out;
-  font-size: 1em;
+  font-size: 1.2rem;
 }
 
 .show-experience-details {
@@ -342,10 +343,21 @@ html {
 }
 
 /*** QUERIES ***/
-@media screen and (max-width: 1232px) {
-  .experience-temporal {
-    font-size: 13.5px;
+@media (min-width: 1024px) {
+  .project-description {
+    font-size: 1.6rem;
   }
+
+  .project-technology,
+  .project-link {
+    font-size: 1.8rem;
+  }
+
+  .project-technology span,
+  .project-link-absolute {
+    font-size: 1.6rem;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
