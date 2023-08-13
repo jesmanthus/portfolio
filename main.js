@@ -7,8 +7,8 @@ const projectsLink = document.getElementById("link-projects");
 const experienceLink = document.getElementById("link-experience");
 const contactLink = document.getElementById("link-contact");
 
-experienceTitle.addEventListener("click", (e) => {
-  const experienceDetails = e.target.nextElementSibling;
+experienceTitle.addEventListener("click", (event) => {
+  const experienceDetails = experienceTitle.nextElementSibling;
   experienceDetails.classList.toggle('show-experience-details')
 });
 

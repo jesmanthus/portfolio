@@ -49,6 +49,7 @@ html {
 
 /*** HEADER ***/
 .header {
+  height: 80px;
   background-color: var(--colorBlack4);
   display: flex;
   justify-content: space-between;
@@ -64,10 +65,6 @@ html {
   margin: 0 0.7em;
   display: flex;
   z-index: 2;
-}
-
-.header-image {
-  height: 80px;
 }
 
 .menu {
@@ -282,7 +279,8 @@ html {
 }
 
 .experience-text i {
-  font-size: 2.0rem;
+  vertical-align: middle;
+  font-size: 2.2rem;
   cursor: pointer;
 }
 
@@ -302,7 +300,7 @@ html {
 }
 
 .show-experience-details {
-  max-height: 120px;
+  max-height: 140px;
 }
 
 /*** SECTION: CONTACT ***/
@@ -441,7 +439,7 @@ html {
   .hero {
     flex-direction: column;
     align-items: center;
-    padding-top: 5em;
+    padding-top: 6em;
   }
 
   .hero-title {
@@ -577,11 +575,8 @@ html {
 
 @media screen and (max-height: 479px) and (max-width: 767px) {
   .header {
-    font-size: 20px;
-  }
-
-  .header-image {
     height: 60px;
+    font-size: 20px;
   }
 
   .menu-list {
